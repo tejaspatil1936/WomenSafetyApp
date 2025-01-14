@@ -1,28 +1,14 @@
-import './App.css'
-import GetStarted from './components/GetStarted'
-import FeatureEmergencySOS from './components/FeatureEmergencySOS'
-import FeatureLiveLoc from './components/FeatureLiveLoc'
-import FeatureAudVidRec from './components/FeatureAudVidRec'
-import FeatureHelplines from './components/FeatureHelplines'
-import LoginSignupPage from './components/LoginSignupPage'
-import AddContacts from './components/AddContacts'
-import Home from './components/Home'
+
+import React from 'react'; // Explicitly import React
+import { BrowserRouter as Router } from "react-router-dom";
+import AppRouter from "./routes/AppRoutes";
 
 function App() {
-
   return (
-    <>
-      {/* <GetStarted /> */}
-      {/* <FeatureEmergencySOS /> */}
-      {/* <FeatureLiveLoc /> */}
-      {/* <FeatureAudVidRec /> */}
-      {/* <FeatureHelplines /> */}
-      {/* <LoginSignupPage /> */}
-      {/* <AddContacts /> */}
-      <Home />
-
-    </>
-  )
+    <Router>
+      <AppRouter />
+    </Router>
+  );
 }
 
-export default App
+export default App;
